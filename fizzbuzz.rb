@@ -9,6 +9,6 @@ end
 class TestFizzBuzz < MiniTest::Test
 
   def test_have_method?
-    assert Integer.method_defined?(:fizzbuzz)
+    assert Integer.method_defined?(:fizzbuzz), "Integer dose not have fizzbuzz method"
   end
 end
