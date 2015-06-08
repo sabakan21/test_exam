@@ -1,17 +1,8 @@
 require 'minitest/autorun'
 
 class Integer
-  def fizzbuzz
-    if self%15 == 0 then
-      "FizzBuzz"
-    elsif self%3 == 0 then
-      "Fizz"
-    elsif self%5 == 0 then
-      "Buzz"
-    else
-      self.to_s
-    end
-  end
+  # == write here! ==
+  
 end
 
 class TestFizzBuzz < MiniTest::Test
