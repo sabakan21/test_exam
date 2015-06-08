@@ -2,7 +2,11 @@ require 'minitest/autorun'
 
 class Integer
   def fizzbuzz
-    self.to_s
+    if self == 3 then
+      return "Fizz"
+    else
+      self.to_s
+    end
   end
 end
 
