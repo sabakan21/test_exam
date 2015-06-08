@@ -27,4 +27,8 @@ class TestFizzBuzz < MiniTest::Test
   def test_3
     assert_equal("Fizz", 3.fizzbuzz, '3 will return "Fizz"')
   end
+
+  def test_6
+    assert_equal("Fizz", 6.fizzbuzz, '6 will also retunr "Fizz"')
+  end
 end
