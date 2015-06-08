@@ -48,4 +48,13 @@ class TestFizzBuzz < MiniTest::Test
   def test_15
     assert_equal("FizzBuzz", 15.fizzbuzz)
   end
+
+  def test_range
+    output = []
+    30.times{|i|
+      output[i] = (i + 1).fizzbuzz
+    }
+    expected = ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz"]
+    assert_equal(expected, output)
+  end
 end
