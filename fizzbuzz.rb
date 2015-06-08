@@ -3,6 +3,9 @@ require 'minitest/autorun'
 class Integer
   def fizzbuzz
     if self%3 == 0 then
+      if self%5 ==0 then
+        return "FizzBuzz"
+      end
       return "Fizz"
     elsif self%5 == 0 then
       return "Buzz"
