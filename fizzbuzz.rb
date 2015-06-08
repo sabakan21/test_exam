@@ -2,13 +2,12 @@ require 'minitest/autorun'
 
 class Integer
   def fizzbuzz
-    if self%3 == 0 then
-      if self%5 ==0 then
-        return "FizzBuzz"
-      end
-      return "Fizz"
+    if self%15 == 0 then
+      "FizzBuzz"
+    elsif self%3 == 0 then
+      "Fizz"
     elsif self%5 == 0 then
-      return "Buzz"
+      "Buzz"
     else
       self.to_s
     end
