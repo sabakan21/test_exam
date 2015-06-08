@@ -15,4 +15,8 @@ class TestFizzBuzz < MiniTest::Test
   def test_1
     assert_equal(1, 1.fizzbuzz, "should return num")
   end
+
+  def test_2
+    assert_equal(2, 2.fizzbuzz, "should return same num")
+  end
 end
