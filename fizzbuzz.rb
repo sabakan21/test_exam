@@ -2,7 +2,7 @@ require 'minitest/autorun'
 
 class Integer
   def fizzbuzz
-    self
+    self.to_s
   end
 end
 
@@ -13,10 +13,10 @@ class TestFizzBuzz < MiniTest::Test
   end
 
   def test_1
-    assert_equal(1, 1.fizzbuzz, "should return num")
+    assert_equal("1", 1.fizzbuzz, "should return num")
   end
 
   def test_2
-    assert_equal(2, 2.fizzbuzz, "should return same num")
+    assert_equal("2", 2.fizzbuzz, "should return same num")
   end
 end
